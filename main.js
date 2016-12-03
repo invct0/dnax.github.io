@@ -70,7 +70,7 @@ function init_terrain() {
     /* Terrain material */
     g.tr_mat = new BABYLON.StandardMaterial('tmat', scene);
     g.tr_mat.diffuseTexture = 
-        new BABYLON.Texture("http://127.0.0.1:8887/grass.dds", scene);
+        new BABYLON.Texture("textures/grass.dds", scene);
 
     /* Texture repeating */
     g.tr_mat.diffuseTexture.uScale = 64.0;
@@ -180,7 +180,7 @@ function init_scene() {
     g.dna0 = create_dna_mesh(16, 0.5);
 
     var h = new BABYLON.StandardMaterial("STA", scene);
-    h.diffuseTexture = new BABYLON.Texture("http://127.0.0.1:8887/dna.png", scene);
+    h.diffuseTexture = new BABYLON.Texture("textures/dna.png", scene);
     h.diffuseTexture.hasAlpha = true;
 
     var p = BABYLON.Mesh.CreatePlane("P", 2.0, scene);
